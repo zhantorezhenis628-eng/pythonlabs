@@ -1,0 +1,5 @@
+n = int(input())
+mylist=set(input().split())
+ehe=list(map(int, mylist))
+hehe = ehe.sort() 
+print(hehe)
