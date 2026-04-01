@@ -12,7 +12,7 @@ $$;
 
 -- A procedure to insert many new users from a list of names and phones - use a loop and 
 -- IF inside the procedure, validate phone correctness, and return all incorrect data
-CREATE OR REPLACE PROCEDURE loophz(p_user VARCHAR[], p_phone VARCHAR[])
+CREATE OR REPLACE PROCEDURE looplist(p_user VARCHAR[], p_phone VARCHAR[])
 LANGUAGE plpgsql AS $$
 BEGIN 
     FOR i IN 1..array_length(p_user, 1) LOOP
