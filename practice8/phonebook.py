@@ -44,7 +44,7 @@ def ups():
     except (Exception, psycopg2.DatabaseError) as error:
         print(error)
 
-def hz():
+def list():
     print("Enter list of usernames and list of phones")
     print("Usernames: ", end="")
     u = input().split()
@@ -53,13 +53,13 @@ def hz():
     if len(u) != len(p):
         print("Error: number of usernames and phones must match.")
         return
-    sql = "CALL loophz(%s, %s)"
+    sql = "CALL looplist(%s, %s)"
     config = load_config()
     try:
         with  psycopg2.connect(**config) as conn:
             conn.notices.clear()   # Clear any previous notices
             with conn.cursor() as cur:
-                cur.execute("CALL loophz(%s, %s)", (u, p))
+                cur.execute("CALL looplist(%s, %s)", (u, p))
                 conn.commit()
                 # Print any notices raised during the call
                 for notice in conn.notices:
@@ -139,7 +139,7 @@ def main():
             a = int(input())
             if a == 1: create_table()
             elif a == 2: ups()
-            elif a == 3: hz()
+            elif a == 3: list()
             elif a == 4: delete_contact()
             elif a == 5: match_return()
             elif a == 6: pages()
