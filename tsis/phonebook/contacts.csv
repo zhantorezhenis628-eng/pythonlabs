@@ -1,0 +1,16 @@
+username,first_name,email,birthday,group_id
+jdoe,John Doe,jdoe@gmail.com,1995-04-12,2
+asmith,Alice Smith,asmith@yahoo.com,1998-11-23,1
+bwayne,Bruce Wayne,bwayne@wayneenterprises.com,1985-02-19,3
+ckent,Clark Kent,ckent@dailyplanet.com,1992-06-18,4
+dprince,Diana Prince,dprince@amazon.com,1990-03-25,2
+pparker,Peter Parker,pparker@dailybugle.com,2000-08-10,1
+tstark,Tony Stark,tstark@starkindustries.com,1987-05-29,3
+srogers,Steve Rogers,srogers@avengers.com,1918-07-04,4
+nromanoff,Natasha Romanoff,nromanoff@shield.com,1989-12-03,2
+lhill,Lauren Hill,lhill@mail.com,1997-09-15,1
+kmiller,Kevin Miller,kmiller@mail.com,1993-01-08,3
+rjohnson,Ryan Johnson,rjohnson@mail.com,1996-10-30,4
+mbrown,Mike Brown,mbrown@mail.com,1991-07-21,2
+ewilson,Emma Wilson,ewilson@mail.com,1999-02-14,1
+dlee,David Lee,dlee@mail.com,1988-06-05,3
